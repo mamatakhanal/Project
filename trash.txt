@@ -1,0 +1,53 @@
+<section class="info-boxes">
+        <section class="link-box">
+            <div class="grid-data container">
+                <div class="row">
+                    <div class="col-3">
+                        <a href="voter_register.php">
+                            <div class="grid-item">
+                                <figure class="grid-image">
+                                    <img src="images/register.png" alt="register">
+                                </figure>
+                                <div class="grid-content">
+                                    <h3 class="titlestyle3">REGISTER</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        
+        <hr>
+        
+    </section>
+
+    
+.info-boxes{
+    margin: auto;
+    text-align: center;
+}
+.info-boxes .link-box{
+    margin: auto;
+}
+.grid-data [class*="col-"] {
+    display: flex;
+}
+
+.grid-item {
+    background-color: #e2e5ff;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.grid-content {
+    padding: 20px;
+}
+
+.grid-image img {
+    display: block;
+    width: 80%;
+    margin: auto;
+    object-fit: cover;
+    padding: 20px;
+}

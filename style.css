@@ -1,0 +1,135 @@
+body{
+    border: 0;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;   
+}
+figure{
+    margin: 0;
+    border: 0;
+}
+header{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+nav{
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    
+}
+nav li a:hover{
+    border-bottom: 1px solid #122761;
+    padding-bottom: 5px;
+}
+menu ul li,a{
+    color: #122761;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.banner{
+    margin: 0;
+    border: 0;
+    background-image: url(images/finalbanner.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+}
+.banner .banner-caption{
+    top: 50%;
+    margin: 10%;
+    width: 40%;
+}
+hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #122761;
+}
+.container{
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+.container h3{
+    padding: 20px;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 16px;
+}
+.grid-item{
+    background-color:#e2e5ff;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px 20px;
+    place-self: center;
+    width: 200px;
+    height: 175px;
+}
+.grid-item img{
+    height: 100px;
+    padding: 10px;
+}
+.grid-item p{
+    padding: 5px;
+}
+
+.grid-item:hover{
+    transform: scale(1.03);
+}
+
+@media (max-width:800px){
+    .grid-container{
+        padding: 20px;
+    }
+}
+
+.additional-links{
+    background-color:#e2e5ff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-col{
+    background-color: none;
+    box-shadow: none;
+    padding: 20px 20px;
+    place-self: center;
+    height: fit-content;
+}
+.grid-col ul,li{
+    list-style: none;
+}
+
+footer{
+    background-color:#332c58;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+footer .grid-col{
+    color: #e2e5ff;
+    padding: 0;
+    place-self: center;
+    height: auto;
+}
